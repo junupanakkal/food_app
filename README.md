@@ -33,9 +33,12 @@ How To Install -
 
 1a. Create Database food using XAMPP.
 1b. copy food_app folder to xamppfiles/htdocs/ and click on Refresh in Browser (if needed).
-2. Run food.sql script provided in sql folder onto XAMPP via ip_address for e.g : 127.0.0.1/myphpadmin.
+2. Run food.sql script provided in sql folder onto XAMPP via ip_address for e.g : http://127.0.0.1/myphpadmin.
 3. scan the QR-Code images as recommended in qr_code_generator/README.md
-4. Read from 4a,5a,6a based on UseCase.
+4a. #### TABLE WALKIN/DINE-IN
+4b. #### ONLINE-ADS
+4c. #### DRIVE_THRU/VEHICLE CALLOUT
+4d. http://192.168.0.5/food_app direct homepage (redirects to index.php)
 5. access db directly http://192.168.0.5/phpmyadmin/ on XAMPP
 
 
@@ -106,3 +109,8 @@ and login using root/toor
 
 7d. modify users as needed and can add new users
 NOTE: This is also possible by directly accessing the http://192.168.0.5/phpmyadmin/ provided you are on the sql-server
+
+# to view homepage
+http://192.168.0.5/food_app/index.php
+or 
+http://192.168.0.5/food_app
