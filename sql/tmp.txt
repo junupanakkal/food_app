@@ -1,0 +1,1 @@
+---- Constraints for table `wallet`--ALTER TABLE `wallet`  ADD CONSTRAINT `wallet_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `users` (`id`)
