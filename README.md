@@ -32,7 +32,7 @@ How To Install -
 ---------
 
 1a. Create Database food using XAMPP.
-1b. copy junusha folder to xamppfiles/htdocs/ and click on Refresh in Browser (if needed).
+1b. copy food_app folder to xamppfiles/htdocs/ and click on Refresh in Browser (if needed).
 2. Run food.sql script provided in sql folder onto XAMPP via ip_address for e.g : 127.0.0.1/myphpadmin.
 3. scan the QR-Code images as recommended in qr_code_generator/README.md
 4. Read from 4a,5a,6a based on UseCase.

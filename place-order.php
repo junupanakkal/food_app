@@ -285,7 +285,7 @@ $verified = $row['verified'];
 	foreach ($_POST as $key => $value)
 	{
 		if($value == ''){
-			break;
+			continue;
 		}
 		if(is_numeric($key)){
 		$result = mysqli_query($con, "SELECT * FROM items WHERE id = $key");
@@ -356,7 +356,7 @@ $verified = $row['verified'];
     <div class="footer-copyright">
       <div class="container">
         <span>Copyright © 2021 <a class="grey-text text-lighten-4" href="#" target="_blank">Junusha Pvt Ltd</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Junusha</a></span>
+        <span class="right"> Designed & Developed by <a class="grey-text text-lighten-4" href="#">Junusha</a></span>
         </div>
     </div>
   </footer>

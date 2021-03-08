@@ -252,7 +252,7 @@ include 'includes/wallet.php';
     <div class="footer-copyright">
       <div class="container">
         <span>Copyright © 2021 <a class="grey-text text-lighten-4" href="#" target="_blank">Junusha Pvt Ltd</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Junusha</a></span>
+        <span class="right"> Designed & Developed by <a class="grey-text text-lighten-4" href="#">Junusha</a></span>
         </div>
     </div>
   </footer>
@@ -291,7 +291,7 @@ include 'includes/wallet.php';
 			while($row = mysqli_fetch_array($result))
 			{
 				echo $row["id"].':{
-				min: 0,
+				min: 1,
 				max: 10
 				},
 				';
@@ -304,7 +304,7 @@ include 'includes/wallet.php';
 			while($row = mysqli_fetch_array($result))
 			{  
 				echo $row["id"].':{
-				min: "Minimum 0",
+				min: "Minimum 1",
 				max: "Maximum 10"
 				},
 				';

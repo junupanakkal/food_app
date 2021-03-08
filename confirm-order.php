@@ -13,7 +13,14 @@ if($_SESSION['customer_sid']==session_id())
 		while($row1 = mysqli_fetch_array($sql1)){
 			$card = $row1['number'];
 			$cvv = $row1['cvv'];
-			if($card == $_POST['cc_number'] && $cvv==$_POST['cvv_number'])
+			$card_no = ($_POST['cc_number']);
+			$cvv_no = ($_POST['cvv_number']);
+			$sql = "UPDATE wallet_details SET number = $card_no WHERE wallet_id = $wallet_id;";
+			$con->query($sql) === TRUE;			
+			$sql2 = "UPDATE wallet_details SET cvv = $cvv_no WHERE wallet_id = $wallet_id;";
+			$con->query($sql2) === TRUE;			
+			if ($con == TRUE)
+#			if($card == $_POST['cc_number'] && $cvv==$_POST['cvv_number'])
 			$continue=1;
 			else
 				header("location:index.php");
@@ -295,7 +302,7 @@ foreach ($_POST as $key => $value)
     <div class="footer-copyright">
       <div class="container">
         <span>Copyright © 2021 <a class="grey-text text-lighten-4" href="#" target="_blank">Junusha Pvt Ltd</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Junusha</a></span>
+        <span class="right"> Designed & Developed by <a class="grey-text text-lighten-4" href="#">Junusha</a></span>
         </div>
     </div>
   </footer>
